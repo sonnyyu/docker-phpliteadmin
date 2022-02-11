@@ -13,3 +13,5 @@ Stop docker stack
 docker-compose down -v
 
 ![Screenshot](resource/sqlitedb.png)
+
+<a href="https://github.com/sonnyyu/docker-phpliteadmin/raw/main/resource/diagram.pdf" >Download Database Diagram PDF</a>
