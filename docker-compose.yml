@@ -6,10 +6,27 @@ services:
     container_name: "phpliteadmin"
     volumes:
       - ./sqlite:/db
-    ports:
-      - "9000:80"
+#    ports:
+#      - "9000:80"
+    expose:
+      - 80
     environment:
       - TZ=America/Los_Angeles
       - PASSWORD=password
       - LOCATION=/db
     restart: 'always'
+    networks:
+      - monitor
+  haproxy:
+    image: haproxytech/haproxy-alpine:2.4
+    container_name: haproxysqlite
+    volumes:
+      - ./haproxy/etc:/usr/local/etc/haproxy:ro
+    ports:
+      - "9000:80"
+    restart: unless-stopped
+    networks:
+      - monitor  
+networks:
+  monitor:
+    driver: bridge
