@@ -12,4 +12,4 @@ Stop docker stack
 
 docker-compose down -v
 
-xfun::embed_file("resource/diagram.pdf")
+[embed]resource/diagram.pdf[/embed]
