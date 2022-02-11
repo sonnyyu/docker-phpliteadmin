@@ -12,4 +12,4 @@ Stop docker stack
 
 docker-compose down -v
 
-[embed]resource/diagram.pdf[/embed]
+![Screenshot](resource/sqlitedb.png)
