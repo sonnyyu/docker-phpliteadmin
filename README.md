@@ -1,6 +1,6 @@
 # docker-phpliteadmin
 
-![Screenshot](resources/stacks.png)
+![Screenshot](resource/sqlite.png)
 
 Put existing sqlite files in the volume or folder mapped to /sqlite. Allowed extensions are .db, .db3, .sqlite, .sqlite3
 
