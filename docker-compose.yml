@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  phpliteadmin:
+    image: 'vtacquet/phpliteadmin'
+    hostname: phpliteadmin
+    container_name: "phpliteadmin"
+    volumes:
+      - ./sqlite:/db
+    ports:
+      - "9000:80"
+    environment:
+      - TZ=America/Los_Angeles
+      - PASSWORD=password
+      - LOCATION=/db
+    restart: 'always'
