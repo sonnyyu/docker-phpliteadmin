@@ -23,7 +23,7 @@ services:
     volumes:
       - ./haproxy/etc:/usr/local/etc/haproxy:ro
     ports:
-      - "9000:80"
+      - "9000:9000"
     restart: unless-stopped
     networks:
       - monitor  
